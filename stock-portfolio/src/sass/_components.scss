@@ -1,0 +1,103 @@
+////////////////////////////////////////
+// SIDE NAVIGATION
+.side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.5rem;
+
+  &__item {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__form {
+    margin-bottom: 2rem;
+  }
+}
+
+////////////////////////////////////////
+// Portfolio
+.portfolio {
+  &__header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border: 1rem solid;
+    border-radius: 2rem;
+    margin: 0 25%;
+    margin-top: 1rem;
+  }
+
+  &__tickers {
+    list-style: none;
+    grid-column: 1 /2;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+
+    &--label {
+      font-size: 2rem;
+    }
+
+    &--form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 8rem;
+      margin-bottom: 4rem;
+    }
+
+    &--item {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+.port-container {
+  display: grid;
+  grid-template-rows: 10rem 30rem;
+  grid-column: full-start / full-end;
+  grid-template-columns: repeat(6, 1fr);
+  border: 0.1rem solid;
+}
+
+////////////////////////////////////////
+// STOCK
+
+.stock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-column: 2 / -1;
+
+  width: 100%;
+
+  &__label {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+
+  &__info {
+    font-size: 1.5rem;
+  }
+}
